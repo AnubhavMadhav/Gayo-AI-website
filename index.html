@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gayo - AI-Powered Audition Analyzer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pap6Go+nXwWT8rh0+TO3v7I3IYp1EjXxNJKFeTczA0PlPZ3jPM9ZzuwkaMoRbAXE7XGOSBiIlLzFe7mpaW2eLg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-left" id="nav-menu">
+            <div class="logo"><a href="#home" data-en="GAYO" data-ko="가요">GAYO</a></div>
+            <a href="#home" data-en="Home" data-ko="홈" class="nav-link">Home</a>
+            <a href="#about" data-en="About" data-ko="소개" class="nav-link">About</a>
+            <a href="#product" data-en="Product" data-ko="제품" class="nav-link">Product</a>
+            <a href="#benefits" data-en="Benefits" data-ko="혜택" class="nav-link">Benefits</a>
+            <a href="#video" data-en="Demo Video" data-ko="제품 영상" class="nav-link">Demo Video</a>
+            <a href="#team" data-en="Team" data-ko="팀" class="nav-link">Team</a>
+            <a href="#contact" data-en="Contact" data-ko="문의" class="nav-link">Contact</a>
+        </div>
+
+
+        <div class="nav-right">
+            <button class="nav-icon-btn" id="themeToggle" onclick="toggleTheme()"
+                aria-label="Toggle Theme">☀️</button>
+            <!-- <button class="nav-icon-btn" onclick="toggleLang()" aria-label="Translate Language">🌐</button> -->
+            <button id="translate-btn" class="translate-btn" onclick="toggleLang()">
+                🇰🇷 한국어로 읽기
+            </button>
+        </div>
+    </nav>
+
+    <div class="hero-wrapper">
+        <header class="hero" id="home">
+            <h1 data-en="Smarter Auditions with Gayo" data-ko="가요와 함께하는 스마트 오디션">Smarter Auditions with Gayo</h1>
+            <p data-en="AI-powered singing analysis platform designed to streamline talent selection for K-pop and global entertainment companies."
+                data-ko="AI 기반 노래 분석 플랫폼으로 K-pop 및 글로벌 엔터테인먼트 회사를 위한 인재 선발을 간소화합니다.">AI-powered singing analysis
+                platform designed to streamline talent selection for K-pop and global entertainment companies.</p>
+        </header>
+    </div>
+
+    <section id="about">
+        <h2 class="section-title" data-en="About Gayo" data-ko="가요 소개">About Gayo</h2>
+        <p class="section-text"
+            data-en="Gayo transforms the way entertainment companies evaluate talent. We empower agencies to conduct smart, scalable singing auditions with AI-based analysis that scores candidates on pitch, rhythm, stability, and more."
+            data-ko="가요는 엔터테인먼트 회사가 인재를 평가하는 방식을 혁신합니다. 우리는 에이전시가 피치, 리듬, 안정성 등 다양한 요소에 기반하여 후보자를 분석하는 스마트하고 확장 가능한 오디션을 진행할 수 있도록 지원합니다.">
+            Gayo transforms the way entertainment companies evaluate talent. We empower agencies to conduct smart,
+            scalable singing auditions with AI-based analysis that scores candidates on pitch, rhythm, stability, and
+            more.</p>
+    </section>
+
+    <section id="product">
+        <h2 class="section-title" data-en="Our B2B Product" data-ko="B2B 제품">Our B2B Product</h2>
+        <div class="grid">
+            <div class="card">
+                <h3 data-en="📊 Bulk Audio Analysis" data-ko="📊 대량 오디오 분석">📊 Bulk Audio Analysis</h3>
+                <p data-en="Upload thousands of audition clips and get instant AI-based scoring and shortlisting."
+                    data-ko="수천 개의 오디션 클립을 업로드하고 AI 기반 점수 및 예선 결과를 즉시 확인하세요.">Upload thousands of audition clips and get
+                    instant AI-based scoring and shortlisting.</p>
+            </div>
+            <div class="card">
+                <h3 data-en="🧠 Skill-Based Ranking" data-ko="🧠 기술 기반 순위">🧠 Skill-Based Ranking</h3>
+                <p data-en="Rank talent by pitch accuracy, stability, rhythm, and energy — all auto-calculated by Gayo's deep voice analysis models."
+                    data-ko="피치 정확도, 안정성, 리듬, 에너지 등 다양한 요소를 기반으로 자동 분석하여 인재를 순위화합니다.">Rank talent by pitch accuracy,
+                    stability, rhythm, and energy — all auto-calculated by Gayo's deep voice analysis models.</p>
+            </div>
+            <div class="card">
+                <h3 data-en="📥 API Access for Auditions" data-ko="📥 오디션용 API 접근">📥 API Access for Auditions</h3>
+                <p data-en="Integrate our system into your platform to power continuous open auditions globally."
+                    data-ko="귀사의 플랫폼에 통합하여 전 세계에서 지속적인 오디션을 진행할 수 있습니다.">Integrate our system into your platform to
+                    power continuous open auditions globally.</p>
+            </div>
+        </div>
+        <p style="margin-top: 2rem; text-align: center;">
+            <a href="https://yourmvpurl.com" target="_blank"
+                style="color: #dcd4d4; font-weight: bold; text-decoration: underline;">🚀 <span
+                    data-en="Try Our Product Now" data-ko="제품 체험하기">Try Our Product Now</span></a>
+        </p>
+    </section>
+
+    <section id="benefits">
+        <h2 class="section-title" data-en="Why Entertainment Companies Choose Gayo" data-ko="왜 가요인가">Why Entertainment
+            Companies Choose Gayo</h2>
+        <div class="grid">
+            <div class="card" data-en="⚡️ Speeds up audition evaluation process by 10x"
+                data-ko="⚡️ 오디션 평가 프로세스를 10배 가속화">⚡️ Speeds up audition evaluation process by 10x</div>
+            <div class="card" data-en="📉 Reduces subjectivity with AI scoring" data-ko="📉 AI 점수로 주관성을 줄임">📉 Reduces
+                subjectivity with AI scoring</div>
+            <div class="card" data-en="🌍 Scalable to global auditions (multi-language support)"
+                data-ko="🌍 전 세계 오디션에 확장 가능 (다국어 지원)">🌍 Scalable to global auditions (multi-language support)</div>
+            <div class="card" data-en="🎯 Data-driven insight into vocal performance" data-ko="🎯 데이터 기반 보컬 성과 통찰력 제공">
+                🎯 Data-driven insight into vocal performance</div>
+            <div class="card" data-en="💸 Saves up to 75% manual screening effort" data-ko="💸 수작업 스크리닝 시간 최대 75% 절감">💸
+                Saves up to 75% manual screening effort</div>
+            <div class="card" data-en="📈 Helps shortlist top 5% singers faster with precision"
+                data-ko="📈 상위 5% 가수를 더 빠르고 정확하게 선별">📈 Helps shortlist top 5% singers faster with precision</div>
+        </div>
+    </section>
+
+    <section id="video">
+        <h2 class="section-title" data-en="🎬 Watch Our Product Overview" data-ko="🎬 제품 소개 영상 보기">🎬 Watch Our Product
+            Overview</h2>
+        <div style="text-align: center;">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
+                allowfullscreen style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);"></iframe>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2 class="section-title" data-en="Meet the Founders" data-ko="창립자 소개">Meet the Founders</h2>
+        <div class="grid">
+            <a href="https://www.linkedin.com/in/anubhav-madhav" target="_blank" class="card team-member">
+                <img src="images/anubhav-madhav.jpeg" alt="Founder 1">
+                <h4>Anubhav Madhav</h4>
+                <p data-en="Co-founder and CEO" data-ko="공동 창립자 및 CEO">Co-founder and CEO</p>
+            </a>
+            <a href="https://www.linkedin.com/in/apurvaskale" target="_blank" class="card team-member">
+                <img src="images/apurva-kale.jpg" alt="Founder 2">
+                <h4>Apurva Kale</h4>
+                <p data-en="Co-founder & CPO" data-ko="공동 창립자 및 CPO">Co-founder & CPO</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title" data-en="Contact Us" data-ko="문의하기">Contact Us</h2>
+        <p style="display: flex; align-items: center; gap: 0.4rem;">
+            <span data-en="Email:" data-ko="이메일:">Email:</span>
+            <a href="mailto:info.gayo.ai@gmail.com" style="color: #c084fc; text-decoration: none;"
+                data-en="info.gayo.ai@gmail.com" data-ko="info.gayo.ai@gmail.com">
+                info.gayo.ai@gmail.com
+            </a>
+        </p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/company/gayo-ai" target="_blank" aria-label="LinkedIn" class="linkedin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@gayo-ai" target="_blank" aria-label="YouTube" class="youtube"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/gayo_ai" target="_blank" aria-label="Twitter" class="twitter"><i
+                    class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Gayo. All rights reserved.</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
